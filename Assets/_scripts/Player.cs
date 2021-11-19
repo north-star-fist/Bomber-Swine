@@ -58,6 +58,7 @@ public class Player : MonoBehaviour, Damageable
             return;
         }
         bombsNumber++;
+        other.enabled = false;
         Destroy(other.gameObject);
     }
 

@@ -107,6 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1135936836332791433}
   - component: {fileID: 7904193553769391904}
+  - component: {fileID: 5014589828196231859}
   m_Layer: 8
   m_Name: cabbage
   m_TagString: OmNomNom
@@ -143,3 +144,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5014589828196231859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317198644517669524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f469569c5c4e864c8da57727365e824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelObjective: {fileID: 0}
+  playerTag: Player
+  objectRoot: {fileID: 0}

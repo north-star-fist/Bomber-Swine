@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 8446093978714837212}
   - component: {fileID: 5224244544780913572}
   - component: {fileID: 5123030671039618806}
+  - component: {fileID: 507782953129102290}
   m_Layer: 7
   m_Name: doggy
   m_TagString: Untagged
@@ -254,6 +255,19 @@ SphereCollider:
   m_GameObject: {fileID: 4882566076438372658}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!135 &507782953129102290
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4882566076438372658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

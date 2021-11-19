@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour, Damageable
 {
+    public GameManager gameManager;
 
     public BoxCollider fieldBounds;
 
@@ -13,6 +14,8 @@ public class Enemy : MonoBehaviour, Damageable
     public Renderer[] renderers;
     public Material healthyMat;
     public Material stinkyMat;
+
+    public string playerTag = "Player";
 
     float prevDestinationUpdateTime;
     float prevStinkyTime;
@@ -40,6 +43,15 @@ public class Enemy : MonoBehaviour, Damageable
     void Update() {
         updateNavDestination();
         updateMaterial();
+    }
+
+
+    private void OnTriggerEnter(Collider other) {
+        if (!other.CompareTag(playerTag)) {
+            return;
+        }
+
+        gameManager?.StopTheGame(false);
     }
 
     public void OnDamage(float damaveValue) {
